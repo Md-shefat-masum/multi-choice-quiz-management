@@ -144,25 +144,30 @@ This website has two Roles:
 First clone this repository, install the dependencies, and setup your .env file.
 
 **run the commands**
+
 clone project
 ```
 git clone https://github.com/Md-shefat-masum/hiring-portal.git
 ```
-or download project
-<button name="button" onclick="https://github.com/Md-shefat-masum/hiring-portal/archive/refs/heads/main.zip">Click Here</button>
+
+or [Click here to download .zip](https://github.com/Md-shefat-masum/hiring-portal/archive/refs/heads/main.zip)
+
 
 install dependencies
 ```
 composer install
 ```
+
 swith directory to project
 ```
 cd hiring-portal
 ```
+
 generate app key
 ```
 php artisan key:generate
 ```
+
 copy .env.example and paste as .env
 ```
 cp .env.example .env
@@ -187,12 +192,13 @@ DB_PASSWORD=
 
 migrate database, and seed
 ```
-fresh migration and seed
-	php artisan migrate:fresh --seed 
-	
-custom seed:
-	php artisan db:seed UserSeeder
-	php artisan db:seed QuizSeeder
+php artisan migrate:fresh --seed 
+```
+
+after migration reseed, previous data will be remove
+```	
+php artisan db:seed UserSeeder
+php artisan db:seed QuizSeeder
 ```
 
 Finally time to launch project, run
