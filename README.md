@@ -104,6 +104,11 @@ This website has two Roles:
 </div>
 
 <div>
+	<h3>Select question for quiz</h3>
+	<img width="700" src="https://github.com/Md-shefat-masum/hiring-portal/blob/main/demo/select-question-for-quiz.jpg?raw=true">
+</div>
+
+<div>
 	<h3>Submit selected question</h3>
 	<img width="700" src="https://github.com/Md-shefat-masum/hiring-portal/blob/main/demo/check-selected-question-submit.jpg?raw=true">
 </div>
@@ -122,3 +127,74 @@ This website has two Roles:
 	<h3>Question edit</h3>
 	<img width="700" src="https://github.com/Md-shefat-masum/hiring-portal/blob/main/demo/edit-question.jpg?raw=true">
 </div>
+
+## Setup
+
+####  Installation
+**requirements**
+
+ 1. PHP: 7.3 | ^8.0
+ 2. Laravel : ^8.75
+
+First clone this repository, install the dependencies, and setup your .env file.
+
+**run the commands**
+```
+git clone https://github.com/Md-shefat-masum/hiring-portal.git
+composer install
+cp .env.example .env
+```
+
+**database setup**
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_db_name
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Then migrate database, and seed
+```
+1. fresh migration db and seed
+	php artisan migrate:fresh --seed 
+	
+custom seed:
+	php artisan db:seed UserSeeder
+	php artisan db:seed QuizSeeder
+```
+
+Finally run
+```
+php artisan serve
+or
+php artisan serve --port=8001 | any supported port number
+```
+the project will open at http://127.0.0.1:8000
+
+**database seed will generate**
+
+ -  login information for one administrator and ten users.
+ -  30 question tests on HTML, CSS, and Github
+
+####  login credentials
+
+**admin:** 
+email: admin@gmail.com 
+pass: @12345678
+
+##### Candidates login:
+
+|     Email      |   password                                            
+|----------------|-------------------------------------|
+|user1@gmail.com |`@12345678`                        |
+|user2@gmail.com |`@12345678`                       |
+|user3@gmail.com |`@12345678`
+|user4@gmail.com |`@12345678`
+|user5@gmail.com |`@12345678`
+|user6@gmail.com |`@12345678`
+|user7@gmail.com |`@12345678`
+|user8@gmail.com |`@12345678`
+|user9@gmail.com |`@12345678`
+|user10@gmail.com |`@12345678`
