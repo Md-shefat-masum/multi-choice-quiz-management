@@ -1,5 +1,5 @@
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=Md-shefat-masum.hiring-portal.readme)
-# Welcome to Job Portal
+# Welcome to Hiring Portal
 
 ##  Table of contents
 * [Introduction](#introduction)
