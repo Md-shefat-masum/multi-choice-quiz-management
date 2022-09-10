@@ -162,7 +162,7 @@ DB_PASSWORD=
 
 Then migrate database, and seed
 ```
-1. fresh migration db and seed
+fresh migration db and seed
 	php artisan migrate:fresh --seed 
 	
 custom seed:
