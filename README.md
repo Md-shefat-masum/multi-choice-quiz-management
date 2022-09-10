@@ -144,13 +144,35 @@ This website has two Roles:
 First clone this repository, install the dependencies, and setup your .env file.
 
 **run the commands**
+download project
 ```
 git clone https://github.com/Md-shefat-masum/hiring-portal.git
-composer install
-cp .env.example .env
 ```
 
-open .env file. 
+install dependencies
+```
+composer install
+```
+swith directory to project
+```
+cd hiring-portal
+```
+generate app key
+```
+php artisan key:generate
+```
+copy .env.example and paste as .env
+```
+cp .env.example .env
+or copy .env.example .env
+```
+
+open in vs code editor
+```
+code .
+```
+
+open .env file and change db name. 
 **database setup**
 ```
 DB_CONNECTION=mysql
@@ -161,9 +183,9 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-Then migrate database, and seed
+migrate database, and seed
 ```
-fresh migration db and seed
+fresh migration and seed
 	php artisan migrate:fresh --seed 
 	
 custom seed:
@@ -171,13 +193,16 @@ custom seed:
 	php artisan db:seed QuizSeeder
 ```
 
-Finally run
+Finally time to launch project, run
 ```
 php artisan serve
-or
-php artisan serve --port=8001 | any supported port number
 ```
 the project will open at http://127.0.0.1:8000
+
+or
+```
+php artisan serve --port=8001 | any supported port number
+```
 
 **database seed will generate**
 
@@ -192,15 +217,15 @@ pass: @12345678
 
 ##### Candidates login:
 
-|     Email      |   password                                            
-|----------------|-------------------------------------|
-|user1@gmail.com |`@12345678`                        |
-|user2@gmail.com |`@12345678`                       |
-|user3@gmail.com |`@12345678`
-|user4@gmail.com |`@12345678`
-|user5@gmail.com |`@12345678`
-|user6@gmail.com |`@12345678`
-|user7@gmail.com |`@12345678`
-|user8@gmail.com |`@12345678`
-|user9@gmail.com |`@12345678`
-|user10@gmail.com |`@12345678`
+|     Email      |   password |                                           
+|----------------|------------|
+|user1@gmail.com |`@12345678` |
+|user2@gmail.com |`@12345678` |
+|user3@gmail.com |`@12345678` |
+|user4@gmail.com |`@12345678` |
+|user5@gmail.com |`@12345678` |
+|user6@gmail.com |`@12345678` |
+|user7@gmail.com |`@12345678` |
+|user8@gmail.com |`@12345678` | 
+|user9@gmail.com |`@12345678` |
+|user10@gmail.com |`@12345678`|
