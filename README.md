@@ -144,10 +144,12 @@ This website has two Roles:
 First clone this repository, install the dependencies, and setup your .env file.
 
 **run the commands**
-download project
+clone project
 ```
 git clone https://github.com/Md-shefat-masum/hiring-portal.git
 ```
+or download project
+[Click here to download](https://github.com/Md-shefat-masum/hiring-portal/archive/refs/heads/main.zip){: .btn}
 
 install dependencies
 ```
