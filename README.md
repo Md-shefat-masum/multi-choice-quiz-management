@@ -149,7 +149,7 @@ clone project
 git clone https://github.com/Md-shefat-masum/hiring-portal.git
 ```
 or download project
-[Click here to download](https://github.com/Md-shefat-masum/hiring-portal/archive/refs/heads/main.zip){: .btn}
+<button name="button" onclick="https://github.com/Md-shefat-masum/hiring-portal/archive/refs/heads/main.zip">Click Here</button>
 
 install dependencies
 ```
