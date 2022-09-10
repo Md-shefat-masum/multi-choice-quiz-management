@@ -124,6 +124,11 @@ This website has two Roles:
 </div>
 
 <div>
+	<h3>Error validation</h3>
+	<img width="700" src="https://github.com/Md-shefat-masum/hiring-portal/blob/main/demo/create-validation.jpg?raw=true">
+</div>
+
+<div>
 	<h3>Question edit</h3>
 	<img width="700" src="https://github.com/Md-shefat-masum/hiring-portal/blob/main/demo/edit-question.jpg?raw=true">
 </div>
