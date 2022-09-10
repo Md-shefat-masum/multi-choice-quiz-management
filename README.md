@@ -150,7 +150,7 @@ composer install
 cp .env.example .env
 ```
 
-open .env file
+open .env file. 
 **database setup**
 ```
 DB_CONNECTION=mysql
