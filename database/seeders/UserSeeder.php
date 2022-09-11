@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
     public function run()
     {
         User::truncate();
-        
+
         User::create([
             'role_id' => 1,
             'name' => "mr admin",
@@ -34,7 +34,7 @@ class UserSeeder extends Seeder
                 'name' => "user $i",
                 'email' => "user$i@gmail.com",
                 'phone' => "016123457$i",
-                'cv_link' => "https://docs.google.com/document/d/1ekrOEsxs9c1S-Rl9C1d1SgYEpTu5BgufBtbpOnTEXgo/edit?usp=sharing&$i",
+                'cv_link' => "https://cdn-images.zety.com/images/zety/landings/templates/cascade@3x.png?$i",
                 'status' => "pending",
                 'password' => Hash::make('@12345678'),
             ]);
