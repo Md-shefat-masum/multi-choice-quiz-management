@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('name',100);
             $table->string('email',155)->unique();
             $table->string('phone',30)->unique();
-            $table->text('cv_link')->unique();
+            $table->text('cv_link');
             $table->string('status',30)->default('pending');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
