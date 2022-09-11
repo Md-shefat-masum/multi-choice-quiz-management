@@ -70,5 +70,12 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/user-info-update/{user}','User\UserController@user_information_update')->name('user_information_update');
 });
 
+Route::get('/data-reload', function () {
+    \Illuminate\Support\Facades\Artisan::call('migrate:refresh', ['--seed' => true]);
+    // \Illuminate\Support\Facades\Artisan::call('migrate', ['--path' => 'vendor/laravel/passport/database/migrations', '--force' => true]);
+    // \Illuminate\Support\Facades\Artisan::call('passport:install');
+    return redirect()->back();
+});
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
