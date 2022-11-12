@@ -18,8 +18,12 @@
             <input type="text" class="form-control" name="phone" value="{{ $user->phone }}">
         </div>
         <div class="form-group mb-4">
-            <label for="">CV link</label>
-            <textarea type="text" class="form-control" name="cv_link" value="">{{ $user->cv_link }}</textarea>
+            <label for="">Submission link</label>
+            <textarea type="text" class="form-control" name="submission_link" value="">{{ $user->submission_link }}</textarea>
+        </div>
+        <div class="form-group mb-4">
+            <label for="">Live link</label>
+            <textarea type="text" class="form-control" name="live_link" value="">{{ $user->live_link }}</textarea>
         </div>
         <button class="btn btn-success">Submit</button>
     </form>
