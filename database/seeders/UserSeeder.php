@@ -28,7 +28,7 @@ class UserSeeder extends Seeder
         ]);
 
         // ten dummy user
-        for ($i = 1; $i <= 10; $i++) {
+        for ($i = 1; $i <= 1; $i++) {
             User::create([
                 'role_id' => 2,
                 'name' => "user $i",

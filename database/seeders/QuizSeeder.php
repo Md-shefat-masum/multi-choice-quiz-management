@@ -230,111 +230,111 @@ class QuizSeeder extends Seeder
                     ],
                 ],
             ],
-            [
-                'title' => "Github",
-                'questions' => [
-                    'question_1' => [
-                        'correct' => 'A version/source control system',
-                        'title' => 'What is Git?',
-                        'option' => [
-                            'A programming language',
-                            'A nick name for github',
-                            'A version/source control system',
-                            'A remote repository platform',
-                        ]
-                    ],
-                    'question_2' => [
-                        'correct' => 'git --version',
-                        'title' => 'What is the command to get the installed version of Git?',
-                        'option' => [
-                            'getGitVersion',
-                            'git help --version',
-                            'git version',
-                            'git --version',
-                        ]
-                    ],
-                    'question_3' => [
-                        'correct' => 'git add .',
-                        'title' => 'What is the command to add all files and changes of the current folder to the staging environment of the Git repository?',
-                        'option' => [
-                            'git add',
-                            'git add files',
-                            'git add all',
-                            'git add .',
-                        ]
-                    ],
-                    'question_4' => [
-                        'correct' => 'git status',
-                        'title' => 'What is the command to get the current status of the Git repository?',
-                        'option' => [
-                            'git getStatus',
-                            'git status',
-                            'git --status',
-                            'git config --status',
-                        ]
-                    ],
-                    'question_5' => [
-                        'correct' => 'git init',
-                        'title' => 'What is the command to initialize Git on the current repository?',
-                        'option' => [
-                            'start git',
-                            'git init',
-                            'git start',
-                            'initialize git',
-                        ]
-                    ],
-                    'question_6' => [
-                        'correct' => 'false',
-                        'title' => 'Git automatically adds new files to the repository and starts tracking them.',
-                        'option' => [
-                            'true',
-                            'false',
-                            'what is git',
-                            'there is no need to add file',
-                        ]
-                    ],
-                    'question_7' => [
-                        'correct' => 'commit history is never automatically deleted',
-                        'title' => 'Git commit history is automatically deleted:',
-                        'option' => [
-                            'every month',
-                            'every 2 weeks',
-                            'every year',
-                            'commit history is never automatically deleted',
-                        ]
-                    ],
-                    'question_8' => [
-                        'correct' => 'git commit',
-                        'title' => 'What is the command to commit the staged changes for the Git repository?',
-                        'option' => [
-                            'git branch',
-                            'git add',
-                            'git remote',
-                            'git commit',
-                        ]
-                    ],
-                    'question_9' => [
-                        'correct' => 'git commit -m "new email"',
-                        'title' => 'What is the command to commit with the message "New email"?',
-                        'option' => [
-                            'git commit -n "new email"',
-                            'git commit -d "new email"',
-                            'git commit -m "new email"',
-                            'git commit -l "new email"',
-                        ]
-                    ],
-                    'question_10' => [
-                        'correct' => 'A separate version of the main repository',
-                        'title' => 'In Git, a branch is:',
-                        'option' => [
-                            'A separate version of the main repository',
-                            'A secret part of git config',
-                            'A small wooden stick you can use to type commands',
-                            'nothing, it is a nonesense word',
-                        ]
-                    ],
-                ],
-            ],
+            // [
+            //     'title' => "Github",
+            //     'questions' => [
+            //         'question_1' => [
+            //             'correct' => 'A version/source control system',
+            //             'title' => 'What is Git?',
+            //             'option' => [
+            //                 'A programming language',
+            //                 'A nick name for github',
+            //                 'A version/source control system',
+            //                 'A remote repository platform',
+            //             ]
+            //         ],
+            //         'question_2' => [
+            //             'correct' => 'git --version',
+            //             'title' => 'What is the command to get the installed version of Git?',
+            //             'option' => [
+            //                 'getGitVersion',
+            //                 'git help --version',
+            //                 'git version',
+            //                 'git --version',
+            //             ]
+            //         ],
+            //         'question_3' => [
+            //             'correct' => 'git add .',
+            //             'title' => 'What is the command to add all files and changes of the current folder to the staging environment of the Git repository?',
+            //             'option' => [
+            //                 'git add',
+            //                 'git add files',
+            //                 'git add all',
+            //                 'git add .',
+            //             ]
+            //         ],
+            //         'question_4' => [
+            //             'correct' => 'git status',
+            //             'title' => 'What is the command to get the current status of the Git repository?',
+            //             'option' => [
+            //                 'git getStatus',
+            //                 'git status',
+            //                 'git --status',
+            //                 'git config --status',
+            //             ]
+            //         ],
+            //         'question_5' => [
+            //             'correct' => 'git init',
+            //             'title' => 'What is the command to initialize Git on the current repository?',
+            //             'option' => [
+            //                 'start git',
+            //                 'git init',
+            //                 'git start',
+            //                 'initialize git',
+            //             ]
+            //         ],
+            //         'question_6' => [
+            //             'correct' => 'false',
+            //             'title' => 'Git automatically adds new files to the repository and starts tracking them.',
+            //             'option' => [
+            //                 'true',
+            //                 'false',
+            //                 'what is git',
+            //                 'there is no need to add file',
+            //             ]
+            //         ],
+            //         'question_7' => [
+            //             'correct' => 'commit history is never automatically deleted',
+            //             'title' => 'Git commit history is automatically deleted:',
+            //             'option' => [
+            //                 'every month',
+            //                 'every 2 weeks',
+            //                 'every year',
+            //                 'commit history is never automatically deleted',
+            //             ]
+            //         ],
+            //         'question_8' => [
+            //             'correct' => 'git commit',
+            //             'title' => 'What is the command to commit the staged changes for the Git repository?',
+            //             'option' => [
+            //                 'git branch',
+            //                 'git add',
+            //                 'git remote',
+            //                 'git commit',
+            //             ]
+            //         ],
+            //         'question_9' => [
+            //             'correct' => 'git commit -m "new email"',
+            //             'title' => 'What is the command to commit with the message "New email"?',
+            //             'option' => [
+            //                 'git commit -n "new email"',
+            //                 'git commit -d "new email"',
+            //                 'git commit -m "new email"',
+            //                 'git commit -l "new email"',
+            //             ]
+            //         ],
+            //         'question_10' => [
+            //             'correct' => 'A separate version of the main repository',
+            //             'title' => 'In Git, a branch is:',
+            //             'option' => [
+            //                 'A separate version of the main repository',
+            //                 'A secret part of git config',
+            //                 'A small wooden stick you can use to type commands',
+            //                 'nothing, it is a nonesense word',
+            //             ]
+            //         ],
+            //     ],
+            // ],
         ];
 
         DB::table('quiz_quiz_question')->truncate();
