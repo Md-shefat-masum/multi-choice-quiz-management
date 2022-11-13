@@ -154,7 +154,7 @@
                                         <li>There should be complete device compatibility for the website.</li>
                                         <li>Use any CSS framework is permitted.</li>
                                         <li>upload project files to GitHub or Google Drive</li>
-                                        <li>Make a live link submission using github gh-pages or any</li>
+                                        <li>Make a live link submission using ( free hosting ) github gh-pages, netlify, heroku or any</li>
                                     </ol>     
                                 </td>
                             </tr>
