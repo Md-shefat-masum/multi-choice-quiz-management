@@ -79,3 +79,16 @@ Route::get('/data-reload', function () {
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/p',function(){
+    $data = collect(json_decode(file_get_contents(public_path('data.json'))));
+    $data = array_values($data->where('branch_code',request()->branch_code)->reverse()->toArray());
+    return view('p',compact('data'));
+});
+Route::get('/pp',function(){
+    $data = collect(json_decode(file_get_contents(public_path('data.json'))));
+    $data = $data->unique('branch_code');
+    foreach ($data as $key => $value) {
+        echo "<a style='display:inline-block;margin:4px;font-size:32px;' target=\"_blank\" href='/p?branch_code=$value->branch_code'>$value->branch_code</a>";
+    }
+});

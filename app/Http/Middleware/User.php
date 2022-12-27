@@ -16,7 +16,7 @@ class User
      */
     public function handle(Request $request, Closure $next)
     {
-        if(auth()->check() && auth()->user()->role_id === 2){
+        if(auth()->check() && auth()->user()->role_id == 2){
             return $next($request);
         }else{
             session()->flash('alert','sorry! you have no permission.');

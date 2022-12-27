@@ -60,7 +60,7 @@
                                     onclick="show_edit_form(event)" 
                                     href="{{ route('user_information_get',auth()->user()->id) }}" 
                                     target="_black">
-                                    Edit Information
+                                    Submit task
                                 </a>
                                 <a class="btn btn-info mx-1" 
                                     onclick="show_assignment_form(event)" 
